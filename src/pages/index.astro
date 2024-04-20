@@ -78,21 +78,25 @@ const projects = (await getCollection('work'))
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Other Work</h3>
 					<p>
-						Click the links below to see what else I'm working on
+						Click the links below to see what else I'm working on.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid>
 						{
-							['Youtube', 'Blog',].map((brand) => (
+							[
+								{ name: 'Youtube', link: 'https://www.youtube.com/@AnishKelkar420' },
+								{ name: 'Blog', link: 'https://anishkelkar42.github.io' },
+							].map((brand) => (
 								<li class="mention-card">
-									<p>{brand}</p>
+									<a href={brand.link}><p>{brand.name}</p></a>
 								</li>
 							))
 						}
 					</Grid>
 				</div>
+				
 			</section>
 			<br>
 		</main>
