@@ -14,17 +14,17 @@ const projects = (await getCollection('work')).sort(
 ---
 
 <BaseLayout
-	title="My Work | Jeanine White"
-	description="Learn about Jeanine White's most recent projects"
+	title="Anish Kelkar Coding Portfolio"
+	description="Coding Projects by Anish Kelkar"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="My Work"
-				tagline="See my most recent projects below to get an idea of my past experience."
+				title="Coding Portfolio"
+				tagline="Click on any project below!"
 				align="start"
 			/>
-			<Grid variant="offset">
+			<Grid>
 				{
 					projects.map((project) => (
 						<li>
@@ -33,6 +33,7 @@ const projects = (await getCollection('work')).sort(
 					))
 				}
 			</Grid>
+			<br>
 		</main>
 		<ContactCTA />
 	</div>
