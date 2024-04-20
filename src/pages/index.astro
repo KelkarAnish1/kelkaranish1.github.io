@@ -80,23 +80,7 @@ const projects = (await getCollection('work'))
 					<a href="https://www.youtube.com/@AnishKelkar420"><Pill><Icon icon="code" size="1.33em" /> Youtube</Pill></a>
 					<a href="https://anishkelkar42.github.io"><Pill><Icon icon="pencil-line" size="1.33em" /> Blog</Pill></a>
 				</div>
-				
 
-				<div class="gallery">
-					<Grid>
-						{
-							[
-								{ name: 'Youtube', link: 'https://www.youtube.com/@AnishKelkar420' },
-								{ name: 'Blog', link: 'https://anishkelkar42.github.io' },
-							].map((brand) => (
-								<li class="mention-card">
-									<a href={brand.link}><p>{brand.name}</p></a>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-				
 			</section>
 			<br>
 		</main>
